@@ -1,7 +1,7 @@
 const express = require('express');
-const { createTrainingPlan } = require('../controllers/trainingPlanController');
 const authMiddleware = require('../middlewares/authMiddleware');
-const validateTrainingPlan = require('../middlewares/validateTrainingPlan'); // Import validation middleware
+const validateTrainingPlan = require('../middlewares/validateTrainingPlan');
+const createTrainingPlan = require('../controllers/trainingPlanController');
 
 const router = express.Router();
 

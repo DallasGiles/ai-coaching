@@ -7,7 +7,7 @@ const authMiddleware = (req, res, next) => {
     req.user = decoded;
     next();
   } catch (error) {
-    res.status(401).send({ error: 'Not authorized to access this resource' });
+    res.status(401).send({ error: 'Please authenticate.' });
   }
 };
 
